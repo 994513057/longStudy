@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>学习</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            {{ message }}
+        </div>
+        <img src="file:///Users/lijie/Pictures/oppo%E6%89%8B%E6%9C%BA%E7%9B%B8%E5%86%8C/%E7%AF%AE%E7%90%83/42182197796ee455c45d422730cc9257.gif" alt="">
+
+        <script src="index.js"></script>
+    </body>
+    <script>
+        var img = new Image();  
+        img.onload = function () {
+        alert("img is loaded")
+        };  
+        img.onerror = function () {
+        alert("error!")
+        };  
+        img.src = "https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png";  
+        function show(){
+        alert("body is loaded");
+        }  
+        window.onload = show;  
+    </script>
+</html>
